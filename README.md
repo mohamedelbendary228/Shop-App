@@ -1,7 +1,6 @@
 # shop_app
 
-A new Flutter application.
-
+An E-commerce app for online shopping with CRUD Services.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
