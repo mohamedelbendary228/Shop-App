@@ -119,12 +119,6 @@ class _EditProductState extends State<EditProduct> {
               ],
             ));
       }
-//      finally {
-//        setState(() {
-//          _isLoading = false;
-//        });
-//        Navigator.of(context).pop();
-//      }
     }
     setState(() {
       _isLoading = false;

@@ -10,7 +10,6 @@ class OrdersScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//    final orderData = Provider.of<Orders>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Your Orders'),
@@ -24,19 +23,12 @@ class OrdersScreen extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           } else {
-//            if (dataSnapShot.error == null) {
-//              // Do a handle error
-//              return Center(
-//                child: Text('An error occurred'),
-//              );
-//            } else {
               return Consumer<Orders>(
                 builder: (ctx, orderData, child) => ListView.builder(
                   itemCount: orderData.orders.length,
                   itemBuilder: (ctx, i) => OrderItem(orderData.orders[i]),
                 ),
               );
-            //}
           }
         },
       ),
